@@ -1,0 +1,253 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+::-moz-selection{
+	background:white;
+	color: black;
+}
+::selection{background: white;}
+body{
+	
+}
+.fas{margin-right: 5px}
+.grid-container{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+.grid-sidebar{
+	background-image: linear-gradient(to right, magenta, red,black);
+	padding: 20px 0px 12px 40px;
+}
+.grid-otherbar{
+
+}
+.fa-accusoft{
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+    margin: 20px 0px 40px 0;
+}
+.head{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600px;
+	text-decoration: none;
+	color: white;
+}
+.grid-sidebar li{
+	list-style: none;
+	margin: 2rem 0;
+}
+.grid-sidebar li a{
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.active{
+	background: white;
+	display: block;
+	color: black !important;
+	padding: 15px 10px;
+	border-radius: 18px 0 0 18px;
+}
+.navbar{
+background-image: linear-gradient(to right,black, red, magenta,black);
+overflow: hidden;
+}
+.navbar .admin{
+    float: right;
+	margin: 10px;
+}
+.navbar img{
+	width: 50px;
+	height: 50px;
+	transition: 1s;
+	border-radius: 50%;
+	border: 3px solid red;
+}
+.navbar p{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 1.7;
+	margin-left: 6px;
+	font-size: 12px;
+	color: white;
+	font-family: sans-serif;
+}
+.dashboard{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0 20px;
+	font-family: sans-serif;
+}
+.fa-stream{
+	color: magenta;
+	margin: 20px 5px;
+}
+.search{
+	border: 1px solid white;
+	border-radius: 4px;
+	outline: none;
+	width: 200px;
+	height: 30px;
+	transition: 1s;
+}
+#card-section{
+	padding: 20px 0 20px 20px;
+}
+.card{
+	overflow: hidden;
+	background: white;
+	box-shadow: 0 0 30px magenta;
+	width: 240px;
+	border-radius: 6px;
+	margin-right:  10px;
+	display: inline-block;
+}
+.card h1{
+	padding: 10px 20px;
+	font-size: 3rem;
+	color: red;
+}
+.card h1 span{
+	float: right;
+	color: magenta;
+}
+.card p{
+	font-size: 18px;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	padding: 0px 0px 10px 20px;
+	color: red;
+}
+.active-card{background-image: linear-gradient(to right, black,white);}
+#table-section{
+	margin: 0 15px;
+	width: 60%;
+	padding: 4px;
+	background-image: linear-gradient(to bottom, red, white,white,white,white,red,magenta);
+	box-shadow: 0 0 30px blue;
+	border-radius: 12px;
+}
+#project-control{display: flex;padding: 10px 14px 0px 0;}
+table{
+	font-family: sans-serif;
+	border-collapse: collapse;
+	border-radius: 12px;
+	width: 100%;
+}
+table td,table th{
+	border-bottom: 1px solid gray;
+	padding: 10px;
+}
+table th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background: #4CAF50;
+}
+table td:last-child{display: flex;}
+.spinner{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.spinner.green{background: deeppink;}
+.spinner.blue{background: rebeccapurple;}
+.spinner.red{background: red;}
+.recent-work{width: 100%; display: flex; justify-content: space-between;padding: 10px 10px 20px 10px;}
+.recent-work p{
+font-size: 20px;
+text-transform: capitalize;
+font-family: sans-serif;
+}
+a.see-all{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 5px 10px;
+	border-radius: 6px;
+}
+.new-customer{
+	width: 40%;
+	box-shadow: 0 0 30px magenta;
+	border-radius: 6px;
+	padding: 10px;
+}
+.customer-detail{
+	display: flex;
+	margin: 10px 10px 0 0;
+	margin-left: 15px;
+}
+.customer-detail img{
+	border-radius: 50%;
+}
+.customer-detail p{
+	margin-left: 5px;
+	margin-right: 20px;
+	line-height: 1.4;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-variant: small-caps;
+}
+.customer-detail p::first-letter{
+	color: magenta;
+	font-family: Blackoak std;
+}
+.customer-detail .customer-icon{
+padding-top: 10px;
+color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+	.search{
+		display: none;
+	}
+	#project-control{
+		display: flex;
+		flex-direction: column;
+	}
+	#table-section,.new-customer{
+		width: 100%;
+	}
+	.card{
+		width: 100%;
+		margin-top: 15px;
+	}
+	.new-customer{
+		margin: 15px 0 15px 15px;
+	}
+	.grid-container{
+		grid-template-columns: 0% 100%;
+	}
+	.grid-sidebar{
+		background: white;
+		overflow: hidden;
+	}
+}
+@media only screen and (max-width:1000px){
+	.card{
+		display: block;
+		width: 100%;
+		margin-top: 15px;
+	}
+}
